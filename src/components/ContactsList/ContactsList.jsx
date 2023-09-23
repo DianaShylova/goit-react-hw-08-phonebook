@@ -9,11 +9,7 @@ export const ContactsList = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
   const filtered = useSelector(selectStatusFilter);
-
-  useEffect(() => {
-      dispatch(fetchContacts()); 
-    }, [dispatch]);
-
+ 
   const normalizedFilter = filtered.toLowerCase();
   const filteredContacts = contacts.filter(({ name }) =>
     name.toLowerCase().includes(normalizedFilter)
