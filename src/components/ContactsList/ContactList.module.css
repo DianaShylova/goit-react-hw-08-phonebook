@@ -9,16 +9,29 @@
 }
 
 .contact_list_item {
+    margin-top: 10px;
+    gap: 50px;
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    color: rgb(204, 204, 51);
 }
 
 .contact_btn {
-    padding: 5px 20px;
+    border-radius: 6px;
+        padding: 10px 30px;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        box-shadow: 5px 5px 10px black;
+        background-image: radial-gradient(white, rgb(153, 0, 0), rgb(51, 0, 0));        
+}
+
+.contact_btn:hover,
+.contact_btn:focus{
+    background-image: radial-gradient(white, rgb(255, 0, 0), rgb(153, 0, 0));
     color: #fff;
-    border: 1px solid rgb(0 153 153);
-    background-color: rgb(102 204 204);
-    border-radius: 5px;
+    transform: scale(1.2);
+    transition: all 250ms;
 }
